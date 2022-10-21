@@ -1,5 +1,5 @@
 # Block Break PLUGIN 1.0
-![Logo](https://i.imgur.com/Padu3Vk.png)
+![Logo](https://i.imgur.com/tcyqwSE.png)
 *A simple plugin*
 If you are mined a block, you get a message.
 # Completed things
