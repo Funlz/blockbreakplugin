@@ -1,0 +1,110 @@
+{
+  "plugin.dependencies": "",
+  "plugin.load-before": "",
+  "plugin.version": "",
+  "debug-build-mode": false,
+  "open-tab": 0,
+  "plugin-components": [
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.lang.String...)",
+        "parameters": [
+          null,
+          null
+        ]
+      }],
+      "=": "comp-command",
+      "parameters": [
+        "activate",
+        "ac",
+        "Activate the plugin!",
+        "Operator",
+        "You don't have premission!",
+        "/activate"
+      ]
+    },
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.util.UUID,java.lang.String...)",
+        "parameters": [
+          null,
+          null,
+          null
+        ]
+      }],
+      "=": "comp-plugin-enable"
+    },
+    {
+      "=": "org.bukkit.event.server.BroadcastMessageEvent",
+      "parameters": ["NORMAL"]
+    },
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.lang.String...)",
+        "parameters": [
+          {"=": "expr-command-sender"},
+          {
+            "=": "expr-local-variable",
+            "parameters": ["Hello! It will avalibe soon!"]
+          }
+        ]
+      }],
+      "=": "comp-command",
+      "parameters": [
+        "bbphelp",
+        "bbph",
+        "Soon!",
+        "",
+        "No permission!",
+        "Idk"
+      ]
+    },
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.lang.String...)",
+        "parameters": [
+          {"=": "expr-command-sender"},
+          {
+            "=": "expr-local-variable",
+            "parameters": ["My discord is in my bio!"]
+          }
+        ]
+      }],
+      "=": "comp-command",
+      "parameters": [
+        "discord",
+        "dc",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.lang.String...)",
+        "parameters": [
+          {"=": "org.bukkit.event.block.BlockBreakEvent#getPlayer()"},
+          {
+            "=": "expr-local-variable",
+            "parameters": ["You mined a block!"]
+          }
+        ]
+      }],
+      "=": "org.bukkit.event.block.BlockBreakEvent",
+      "parameters": ["NORMAL"]
+    }
+  ],
+  "plugin.soft-dependencies": "",
+  "plugin.name": "",
+  "plugin.prefix": "",
+  "current-plugin-component": 0,
+  "plugin.author": "",
+  "plugin.description": "",
+  "plugin.permissions": "",
+  "open-plugin-components": [
+    5,
+    3
+  ],
+  "plugin.website": ""
+}
